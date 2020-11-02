@@ -1,3 +1,10 @@
+.interior_consultant__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .interior_consultant__header__heading {
     padding-block-start: 8px;
     padding-block-end: 7px;
