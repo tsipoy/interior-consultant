@@ -1,0 +1,73 @@
+.interior_consultant__main__heading {
+    padding-block-end: 25px;
+    padding-block-start: 45px;
+    font-size: 36px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+.interior_consultant__main__article__description {
+    padding-block-end: 25px;
+}
+
+.interior_consultant__main__article__anchor {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+
+.interior_consultant__main__image {
+    padding-block-start: 25px;  
+    position: relative;  
+}
+
+.interior_consultant__main__designer__about__photo {
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+
+.interior_consultant__main__designer {
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-inline-start: 19px;
+    padding-block-end: 1px;
+    padding-block-start: 16px;
+    padding-inline-end: 61px;
+    position: absolute;
+    bottom: -85px;
+    right: 10px;
+}
+
+.interior_consultant__main__designer__about {
+    display: flex;
+    flex-direction: row;
+}
+
+.interior_consultant__main__designer__about__about {
+    padding-inline-start: 20px;
+    margin-block-start: -15px;
+}
+
+.interior_consultant__main__designer__about__about__job {
+    font-size: 10px;
+    line-height: 12px;
+    color: #828282;
+    margin-block-start: -12px;
+}
+
+.interior_consultant__main__designer__about__about__job {
+    font-size: 10px;
+    line-height: 12px;
+    color: #828282;
+    margin-block-start: -12px;
+}
+
+.interior_consultant__main__designer__about__time__years {
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    max-width: 190px;
+}
