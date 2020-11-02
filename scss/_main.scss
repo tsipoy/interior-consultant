@@ -30,7 +30,7 @@
 
 
 .interior_consultant__main__designer {
-    background: #181719;
+    background-color: #000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding-inline-start: 19px;
     padding-block-end: 1px;
@@ -70,4 +70,27 @@
     line-height: 23px;
     color: #FFFFFF;
     max-width: 190px;
+}
+
+@media(min-width: 900px) {
+    .interior_consultant__main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .interior_consultant__main__article {
+        max-width: 256px;
+        padding-inline-end: 87px;
+    }
+
+    .interior_consultant__main__figure {
+        padding-block-start: 50px;
+    }
+
+    .interior_consultant__main__designer {
+        background-color: #000;
+        padding-inline-end: 116px;
+        bottom: -75px;
+        right: 28px;
+    }
 }

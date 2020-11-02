@@ -9,14 +9,20 @@
 </head>
 
 <body>
+    <input type="checkbox" id="checkbox" class="open_checkbox">
     <header class="interior_consultant__header">
         <h1 class="interior_consultant__header__heading">
             This interior
         </h1>
-       <div>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-       </div>
-        <!-- <nav class="interior_consultant__header__navigation">
+        <div class="interior_consultant__header__menu__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+        </div>
+        <label for="checkbox" class="header_label">
+            <span class="header_label__span">Open menu</span>
+        </label>
+        <nav class="interior_consultant__header__navigation">
             <ul class="interior_consultant__header__navigation__list">
                 <li class="interior_consultant__header__navigation__list_pages"><a href="#"
                         class="interior_consultant__header__navigation__list_anchor">Home</a></li>
@@ -27,7 +33,7 @@
                 <li class="interior_consultant__header__navigation__list_pages"><a href="#"
                         class="interior_consultant__header__navigation__list_anchor">Contact</a></li>
             </ul>
-        </nav> -->
+        </nav>
     </header>
     <main class="interior_consultant__main">
         <article class="interior_consultant__main__article">

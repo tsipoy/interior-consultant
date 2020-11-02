@@ -18,3 +18,32 @@
     font-size: 14px;
     line-height: 16px;
 }
+
+.interior_consultant__header__navigation {
+    display: none;
+}
+
+@media(min-width: 900px) {
+    .interior_consultant__header__navigation__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .interior_consultant__header__navigation__list_pages {
+        padding-inline-start: 86px; 
+    }
+
+    // .interior_consultant__header__navigation__list_anchor:hover {
+    //     font-size: 18px;
+    //     line-height: 22px;
+    //     transition: .2s;
+    // }
+
+    .interior_consultant__header__menu__icon {
+        display: none;
+    }
+
+    .interior_consultant__header__navigation {
+        display: block;
+    }
+}

@@ -15,6 +15,12 @@ a {
 svg {
   fill: #FFFFFF; }
 
+header,
+main,
+footer {
+  margin: auto;
+  max-width: 1000px; }
+
 .interior_consultant__header {
   display: flex;
   flex-direction: row;
@@ -33,6 +39,20 @@ svg {
   max-width: max-content;
   font-size: 14px;
   line-height: 16px; }
+
+.interior_consultant__header__navigation {
+  display: none; }
+
+@media (min-width: 900px) {
+  .interior_consultant__header__navigation__list {
+    display: flex;
+    flex-direction: row; }
+  .interior_consultant__header__navigation__list_pages {
+    padding-inline-start: 86px; }
+  .interior_consultant__header__menu__icon {
+    display: none; }
+  .interior_consultant__header__navigation {
+    display: block; } }
 
 .interior_consultant__main__heading {
   padding-block-end: 25px;
@@ -59,7 +79,7 @@ svg {
   max-height: 40px; }
 
 .interior_consultant__main__designer {
-  background: #181719;
+  background-color: #000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-inline-start: 19px;
   padding-block-end: 1px;
@@ -94,6 +114,21 @@ svg {
   line-height: 23px;
   color: #FFFFFF;
   max-width: 190px; }
+
+@media (min-width: 900px) {
+  .interior_consultant__main {
+    display: flex;
+    flex-direction: row; }
+  .interior_consultant__main__article {
+    max-width: 256px;
+    padding-inline-end: 87px; }
+  .interior_consultant__main__figure {
+    padding-block-start: 50px; }
+  .interior_consultant__main__designer {
+    background-color: #000;
+    padding-inline-end: 116px;
+    bottom: -75px;
+    right: 28px; } }
 
 .interior_consultant__footer {
   padding-block-start: 145px; }
