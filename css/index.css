@@ -32,16 +32,57 @@ footer {
   padding-block-end: 7px;
   padding-inline-start: 8px;
   padding-inline-end: 9px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: max-content;
   font-size: 14px;
   line-height: 16px; }
 
-.interior_consultant__header__navigation {
+.open_checkbox {
   display: none; }
+
+.interior_consultant__header__menu__icon {
+  position: relative; }
+
+.header_label {
+  position: absolute;
+  right: -12px; }
+
+.interior_consultant__header__navigation {
+  padding: 1rem;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 50px rgba(204, 181, 181, 0.5);
+  transform: translateX(-110%);
+  transition: transform 0.3s; }
+
+[type="checkbox"]:checked ~ header .interior_consultant__header__navigation {
+  transform: translateX(0);
+  background-color: rgba(0, 0, 0, 0.75); }
+
+[type="checkbox"]:checked ~ .interior_consultant__header .header_label {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25); }
+
+body > [type="checkbox"]:checked ~ main {
+  z-index: 1; }
+
+.header_label__span {
+  color: transparent; }
 
 @media (min-width: 900px) {
   .interior_consultant__header__navigation__list {
@@ -52,7 +93,18 @@ footer {
   .interior_consultant__header__menu__icon {
     display: none; }
   .interior_consultant__header__navigation {
-    display: block; } }
+    position: inherit;
+    z-index: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    transform: none;
+    transition: none; }
+  .interior_consultant__header__navigation__list_pages {
+    padding-block-end: 32px; } }
 
 .interior_consultant__main__heading {
   padding-block-end: 25px;
