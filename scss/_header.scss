@@ -55,7 +55,7 @@
 
 [type="checkbox"]:checked ~ header .interior_consultant__header__navigation {
     transform: translateX(0);
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: black;
 }
 
 [type="checkbox"]:checked ~ .interior_consultant__header .header_label {
@@ -67,13 +67,16 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 body > [type="checkbox"]:checked ~ main {
     z-index: 1;
 }
 
+.interior_consultant__header__navigation__list_pages {
+    padding-block-start: 32px;    
+}
 .header_label__span {
     color: transparent;
 }
@@ -111,7 +114,4 @@ body > [type="checkbox"]:checked ~ main {
         transition: none;
     }
 
-    .interior_consultant__header__navigation__list_pages {
-        padding-block-end: 32px;
-    }
 }
