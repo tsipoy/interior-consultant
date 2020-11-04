@@ -1,3 +1,45 @@
+@font-face {
+  font-family: "Crimson Pro";
+  font-weight: 200;
+  font-style: normal;
+  src: local("Crimson Pro Regular"), local("Crimson-Pro-Regular"), url("../fonts/crimsonPro-extraLight.woff2") formt("woff2"), url("../fonts/crimsonPro-extraLight.woff") format("woff"); }
+
+@font-face {
+  font-family: "Lora";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Lora Regular"), local("Lora-Regular"), url("../fonts/lora-regular.woff2") formt("woff2"), url("../fonts/lora-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Lora";
+  font-weight: 700;
+  font-style: bold;
+  src: local("Lora Bold"), local("Lora-Bold"), url("../fonts/lora-variableFont_wght.woff2") formt("woff2"), url("../fonts/lora-variableFont_wght.woff") format("woff"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-style: normal;
+  src: local("Montserrat Thin 100"), local("Montserrat-Thin-100"), url("../fonts/montserrat-thin.woff2") formt("woff2"), url("../fonts/montserrat-thin.woff") format("woff"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-style: normal;
+  src: local("Montserrat Light 300"), local("Montserrat-Light-300"), url("../fonts/montserrat-light.woff2") formt("woff2"), url("../fonts/montserrat-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: medium;
+  src: local("Montserrat Medium 500"), local("Montserrat-Medium-500"), url("../fonts/montserrat-medium.woff2") formt("woff2"), url("../fonts/montserrat-medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: medium;
+  src: local("Montserrat Semi Bold 600"), local("Montserrat-Semi-Bold-600"), url("../fonts/Montserrat-semiBold.woff2") formt("woff2"), url("../fonts/Montserrat-semiBold.woff") format("woff"); }
+
 body {
   margin: 0;
   background-color: #000000;
@@ -5,8 +47,31 @@ body {
   padding-inline-start: 12px;
   padding-inline-end: 12px; }
 
+html {
+  font-family: 'Montserrat', sans-serif; }
+
+.interior_consultant__header__heading {
+  font-family: 'Crimson Pro', serif;
+  font-style: normal;
+  font-weight: 200; }
+
+.interior_consultant__main__heading {
+  font-family: 'Lora', serif;
+  font-style: normal;
+  font-weight: normal; }
+
+.interior_consultant__main__designer__about__time__years {
+  font-family: 'Lora', serif; }
+
+.interior_consultant__main__article__description {
+  font-weight: 100;
+  line-height: 22px; }
+
 li {
   list-style: none; }
+
+li > a {
+  font-weight: 500; }
 
 a {
   text-decoration: none;

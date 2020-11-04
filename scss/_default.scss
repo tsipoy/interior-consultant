@@ -6,8 +6,37 @@ body {
     padding-inline-end: 12px;
 }
 
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.interior_consultant__header__heading {
+    font-family:'Crimson Pro', serif;
+    font-style: normal;
+    font-weight: 200;;
+}
+
+.interior_consultant__main__heading {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.interior_consultant__main__designer__about__time__years {
+    font-family: 'Lora', serif;
+}
+
+.interior_consultant__main__article__description {
+    font-weight: 100;
+    line-height: 22px;
+}
+
 li {
     list-style: none;
+}
+
+li > a {
+    font-weight: 500;
 }
 
 a {

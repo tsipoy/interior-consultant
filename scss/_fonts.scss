@@ -1,0 +1,73 @@
+$font-faces : (
+    (
+        name: "Crimson Pro Regular",
+        system-name: 'Crimson-Pro-Regular',
+        style: normal,
+        family: 'Crimson Pro',
+        weight: 200,
+        filename: 'crimsonPro-extraLight',
+    ), 
+    (
+      name: "Lora Regular",
+      system-name: 'Lora-Regular',
+      style: normal,
+      family: 'Lora',
+      weight: 400,
+      filename: 'lora-regular',
+  ), 
+    (
+      name: "Lora Bold",
+      system-name: 'Lora-Bold',
+      style: bold,
+      family: 'Lora',
+      weight: 700,
+      filename: 'lora-variableFont_wght',
+    ),
+    (
+      name: "Montserrat Thin 100",
+      system-name: 'Montserrat-Thin-100',
+      style: normal,
+      family: 'Montserrat',
+      weight: 100,
+      filename: 'montserrat-thin',
+    ),
+    (
+      name: "Montserrat Light 300",
+      system-name: 'Montserrat-Light-300',
+      style: normal,
+      family: 'Montserrat',
+      weight: 100,
+      filename: 'montserrat-light',
+    ),
+    (
+      name: "Montserrat Medium 500",
+      system-name: 'Montserrat-Medium-500',
+      style: medium,
+      family: 'Montserrat',
+      weight: 500,
+      filename: 'montserrat-medium',
+    ),
+    (
+      name: "Montserrat Semi Bold 600",
+      system-name: 'Montserrat-Semi-Bold-600',
+      style: medium,
+      family: 'Montserrat',
+      weight: 600,
+      filename: 'Montserrat-semiBold',
+    ),
+);
+
+  
+  
+@each $font in $font-faces {
+    @font-face {
+    font-family: map-get($font, family);
+    font-weight: map-get($font, weight);
+    font-style: map-get($font, style);
+    src: 
+        local(map-get($font, name)),
+        local(map-get($font, system-name)),
+        url("../fonts/#{map-get($font, filename)}.woff2") formt("woff2"),
+        url("../fonts/#{map-get($font, filename)}.woff") format("woff") ;
+    }
+  }
