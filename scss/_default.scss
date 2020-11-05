@@ -35,8 +35,9 @@ li {
     list-style: none;
 }
 
-li > a {
-    font-weight: 500;
+li > a:hover {
+    font-weight: 700;
+    transition: 1s;
 }
 
 a {

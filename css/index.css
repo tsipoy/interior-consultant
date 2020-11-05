@@ -70,8 +70,9 @@ html {
 li {
   list-style: none; }
 
-li > a {
-  font-weight: 500; }
+li > a:hover {
+  font-weight: 700;
+  transition: 1s; }
 
 a {
   text-decoration: none;
@@ -90,7 +91,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: baseline; }
 
 .interior_consultant__header__heading {
   padding-block-start: 8px;
@@ -184,6 +185,7 @@ body > [type="checkbox"]:checked ~ main {
 
 .interior_consultant__main__article__anchor {
   font-size: 14px;
+  font-weight: 600;
   line-height: 17px;
   color: #FFFFFF; }
 
@@ -233,6 +235,23 @@ body > [type="checkbox"]:checked ~ main {
   color: #FFFFFF;
   max-width: 190px; }
 
+.interior_consultant__main__designer__about__about__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px; }
+
+.interior_consultant__main__learn__more__article {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center; }
+
+.interior_consultant__main__learn__more__article__anchor {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding-inline-end: 15px; }
+
 @media (min-width: 900px) {
   .interior_consultant__main {
     display: flex;
@@ -244,9 +263,22 @@ body > [type="checkbox"]:checked ~ main {
     padding-block-start: 50px; }
   .interior_consultant__main__designer {
     background-color: #000;
-    padding-inline-end: 116px;
+    padding-inline-end: 142px;
     bottom: -75px;
     right: 28px; } }
 
 .interior_consultant__footer {
   padding-block-start: 145px; }
+
+.interior_consultant__footer__copyright {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A9A9A9;
+  text-align: center;
+  padding-block-start: 19px;
+  border-block-start: 1px solid #A9A9A9; }
+
+@media (min-width: 900px) {
+  .interior_consultant__footer__copyright {
+    border: none; } }

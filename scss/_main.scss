@@ -12,6 +12,7 @@
 
 .interior_consultant__main__article__anchor {
     font-size: 14px;
+    font-weight: 600;
     line-height: 17px;
     color: #FFFFFF;
 }
@@ -72,6 +73,26 @@
     max-width: 190px;
 }
 
+.interior_consultant__main__designer__about__about__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px; 
+}
+
+.interior_consultant__main__learn__more__article {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.interior_consultant__main__learn__more__article__anchor {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding-inline-end: 15px;
+}
+
 @media(min-width: 900px) {
     .interior_consultant__main {
         display: flex;
@@ -89,7 +110,7 @@
 
     .interior_consultant__main__designer {
         background-color: #000;
-        padding-inline-end: 116px;
+        padding-inline-end: 142px;
         bottom: -75px;
         right: 28px;
     }
